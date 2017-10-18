@@ -1,2 +1,8 @@
 language: csharp
 sulution: idz1.sln
+install:
+  - nuget restore idz1.sln
+  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
+script:
+  - xbuild /p:Configuration=Release idz1.sln
+  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./sni_test.Tests/bin/Release/sni_test.Tests.dll
