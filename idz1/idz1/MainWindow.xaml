@@ -1,0 +1,42 @@
+﻿<Window x:Class="idz1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:idz1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="900" Width="1600">
+    <Grid>
+        <ToolBar Height="37" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" BorderBrush="Black"/>
+        <DockPanel HorizontalAlignment="Left" Height="818" Margin="10,42,0,0" VerticalAlignment="Top" Width="484"/>
+        <TabControl Margin="0,42,1093,0">
+            <TabItem x:Name="elements">
+                <TabItem.Header>
+                    <TextBlock>Elements</TextBlock>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel>
+                        <Expander Header="Event">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0">1111</TextBlock>
+                                <TextBlock Grid.Column="1">2222</TextBlock>
+                            </Grid>
+                        </Expander>
+                        <Expander Header="Task">
+
+                        </Expander>
+                        <Expander Header="Gateway">
+
+                        </Expander>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+        </TabControl>
+        <Canvas Margin="499,42,5,5" Width="1088" Background="#FFF5F0F0"/>
+
+    </Grid>
+</Window>
